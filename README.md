@@ -2,13 +2,17 @@
 IBAN Validator in Haskell
 -------------------------
 
-This small Haskell project implements IBAN validation according to the formal IBAN rules.
+# Haskell IBAN Validator
 
-Features:
-- block validation
-- country code validation
-- IBAN length verification
-- character filtering and resolving (A=10...Z=35)
-- conversion to integer and mod 97 check
+This is a small Haskell project implementing IBAN validation.
 
-This was built as part of my Functional Programming course at ELTE.
+It checks:
+- country code
+- total IBAN length
+- block validity (1–4 chars, uppercase or digits)
+- resolves letters A=10..Z=35
+- performs optional mod 97 check
+
+Course: Functional Programming (ELTE)
+Language: Haskell
+
